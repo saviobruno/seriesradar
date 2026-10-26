@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo de Séries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Séries</h1>
+  <p>Pesquise uma série e veja quando estreou, a nota do público e onde assistir.</p>
+  <div class="controls">
+    <input class="search" id="q" type="search" placeholder="Digite o nome de uma série" autocomplete="off" aria-label="Pesquisar séries" autofocus>
+  </div>
+  <div class="chips" id="chips" aria-label="Sugestões"></div>
+</header>
+
+<main>
+  <h2 class="section-title" id="title" hidden></h2>
+  <div class="grid" id="grid"></div>
+  <div class="state" id="state"></div>
+</main>
+
+<dialog id="modal" aria-label="Detalhes da série"></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
